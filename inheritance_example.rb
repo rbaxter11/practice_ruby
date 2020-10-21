@@ -36,5 +36,5 @@ car1 = Car.new
 car1.accelerate
 puts car1.honk_horn
 bike1 = Bike.new
-car1.accelerate
+bike1.accelerate
 puts bike1.ring_bell
