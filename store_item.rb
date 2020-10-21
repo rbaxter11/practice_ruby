@@ -9,10 +9,10 @@ class Apple
   attr_reader :name, :color, :price
   attr_writer :price
 
-  def initialize(input_name, input_color, input_price)
-    @name = input_name
-    @color = input_color
-    @price = input_price
+  def initialize(input_options)
+    @name = input_options[:name]
+    @color = input_options[:color]
+    @price = input_options[:price]
   end
 
   # def name
@@ -34,10 +34,10 @@ class Apple
 
 end
 
-apple1 = Apple.new("gala", "speckled red", 0.69)
-apple2 = Apple.new("fuji", "green/red", 0.69)
-apple3 = Apple.new("honeycrisp", "red/yellow", 1.29)
-apple4 = Apple.new("rave", "shiny red/yellow", 1.69)
+apple1 = Apple.new(name: "gala", color: "speckled red", price: 0.69)
+apple2 = Apple.new(name: "fuji", color: "green/red", price: 0.69)
+apple3 = Apple.new(name: "honeycrisp", color: "red/yellow", price: 1.29)
+apple4 = Apple.new(name: "rave", color: "shiny red/yellow", price: 1.69)
 
 puts apple1.name
 puts apple1.color
