@@ -1,3 +1,5 @@
+require "./apple.rb"
+
 class Food < Apple
   attr_accessor :shelf_life
   def initialize(input_options)
