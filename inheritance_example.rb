@@ -2,7 +2,7 @@ class Vehicle
   attr_accessor :speed, :direction
   def initialize(input_options)
     @speed = input_options[:speed]
-    @direction = input_options[:directon]
+    @direction = input_options[:direction]
   end
 
   def brake
